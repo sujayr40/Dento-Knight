@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body
+{
+    width: 100%;
+    /* height: 400px; */
+    /* padding: 50px 5%; */
+    /* background-color: lightgray; */
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6.66%;
+    row-gap: 20px;
+}
+
+.navigation
+{
+    width: 100%;
+    height: 70px;
+    /* background-color: lightgray; */
+    padding: 0px 2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+.logo
+{
+    width: 15%;
+    height: 100%;
+    /* background-color: red; */
+}
+.logo-img
+{
+    width: 100%;
+}
+
+.menu-box
+{
+    width: 40%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.list
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    font-size: 20px;
+    
+}
+.page
+{
+    cursor: pointer;
+    justify-content: space-between;
+    
+    
+}
+
+.link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.page:hover
+{
+    color: blue;
+    font-weight: bold;
+}
+
+.link:hover
+{
+    color: blue;
+    font-weight: bold;
+}
+
+.c2a-button
+{
+ height: 40px;
+ width: 130px;
+ border-radius: 10px;
+ border: 1px solid black;
+ overflow: hidden;
+ align-items: center;
+}
+
+.banner1
+{
+    width: 100%;
+    height: 500px;
+    /* background-color: aqua;
+    border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    box-sizing: border-box;
+}
+
+.image
+{
+    width: 48%;
+    height: 90%;
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-child
+{
+    width: 100%;
+}
+
+.text
+{
+    width: 48%;
+    height: 90%;
+    /* background-color: chartreuse; */
+    display: flex;
+    overflow-y: scroll;
+    align-items: center;
+    font-size: 18px;
+}
+
+.form
+{
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input{
+    border-radius: .6rem;
+}
+
+.input
+{
+    width: 100%;
+    height: 230px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    row-gap: 5px;
+}
+
+.fild
+{
+    font-size: 20px;
+}
+
+.button{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.finalbutton
+{
+    height: 40px;
+    width: 200px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.donate
+{
+    width: 70px;
+    height: 610px;
+    display: flex;
+    margin-left: 20px;
+    position: fixed;
+    opacity: 1;
+    /* background-color: #F7F858; */
+    align-items: end;
+}
+
+.donate img{
+    width: 100%;
+}
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 971px) {
+    .menu-box
+    {
+        width: 60%;
+    }
+
+    .banner1{
+        padding: 0 2%;
+        flex-direction: column;
+        height: 850px;
+        justify-content: center;
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
+    .image
+    {
+        width: 90%;
+        height: 500px;
+    }
+
+    .text{
+        width: 90%;
+        height: 320px;
+    }
+
+    .donate
+    {
+        height: 530px;
+        width: 50px;
+    }
+
+}
+
+@media (max-width: 647px) {
+    .navigation
+    {
+        height: 30px;
+        align-items: center;
+    }
+
+    .menu-box{
+        position: absolute;
+        opacity: 0;
+    }
+
+    .banner1{
+        height: 550px;
+    }
+
+    .image
+    {
+        height: 300px;
+    }
+
+    .text{
+        height: 200px;
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .banner1{
+        height: 550px;
+    }
+
+    .text{
+        height: 300px;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .banner1{
+        width: 100%;
+        height: 550px;
+    }
+
+    .image{
+        width: 90%;
+        height: 200px;
+    }
+
+    .text{
+        height: 300px;
+        width: 90%;
+        font-size: 1.4rem;
+    }
+}
